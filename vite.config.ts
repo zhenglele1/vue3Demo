@@ -7,7 +7,8 @@ const pathResolve = (pathStr: string) => {
 const config = {
     base: './',//在生产中服务时的基本公共路径。@default '/'
     alias: {
-        '/@/': pathResolve('./src'),
+        '~': path.resolve(__dirname, './'),
+        '@': path.resolve(__dirname, 'src')
     },
     outDir: 'vite-init',//构建输出将放在其中。会在构建之前删除旧目录。@default 'dist'
     minify: 'esbuild',//构建时的压缩方式

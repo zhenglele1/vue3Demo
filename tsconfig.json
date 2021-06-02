@@ -4,11 +4,7 @@
         "module": "commonjs", //指定模块代码生成:'none'， 'commonjs'， 'amd'， 'system'， 'umd'， 'es2015'， 'es2020'，或'ESNext'。
         "strict": true, //是否启用所有严格的类型检查选项。
         "baseUrl": "./", //用于解析非绝对模块名称的基本目录。
-        "paths": {
-            "/@/*": [
-                "./src/*"
-            ]
-        },
+
         "noImplicitAny": true, //对于隐含有'any'类型的表达式和声明引发错误。
         "esModuleInterop": true, //通过为所有导入创建名称空间对象，实现CommonJS和ES模块之间的互操作性。意味着“allowSyntheticDefaultImports”。
         "experimentalDecorators": true, //支持对ES7装饰器的实验性支持。
